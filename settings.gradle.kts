@@ -21,5 +21,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Karoo Extension Template"
+rootProject.name = "Fuel Tracker"
 include("app")

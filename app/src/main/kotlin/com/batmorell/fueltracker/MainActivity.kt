@@ -1,10 +1,10 @@
-package io.hammerhead.fueltracker
+package com.batmorell.fueltracker
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import io.hammerhead.fueltracker.screens.MainScreen
-import io.hammerhead.fueltracker.theme.AppTheme
+import com.batmorell.fueltracker.screens.FuelTrackingScreen
+import com.batmorell.fueltracker.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +12,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             AppTheme {
-                MainScreen()
+                FuelTrackingScreen()
             }
         }
     }

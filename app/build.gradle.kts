@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "io.hammerhead.karooexttemplate"
+    namespace = "com.batmorell.fueltracker"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "io.hammerhead.karooexttemplate"
+        applicationId = "com.batmorell.fueltracker"
         minSdk = 23
         targetSdk = 34
         versionCode = 1

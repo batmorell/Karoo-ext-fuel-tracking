@@ -1,4 +1,4 @@
-package io.hammerhead.fueltracker.theme
+package com.batmorell.fueltracker.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable

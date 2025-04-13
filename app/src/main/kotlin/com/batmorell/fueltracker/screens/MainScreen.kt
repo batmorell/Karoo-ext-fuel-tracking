@@ -1,4 +1,4 @@
-package io.hammerhead.fueltracker.screens
+package com.batmorell.fueltracker.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -10,8 +10,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import io.hammerhead.fueltracker.R
-import io.hammerhead.fueltracker.theme.AppTheme
+import com.batmorell.fueltracker.R
+import com.batmorell.fueltracker.theme.AppTheme
 
 @Composable
 fun MainScreen() {

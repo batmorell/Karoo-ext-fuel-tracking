@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    package="com.batmorell.fueltracker"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
@@ -9,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
+
+        <!-- Launch Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -18,17 +22,20 @@
             </intent-filter>
         </activity>
 
+        <!-- Your Extension Service -->
         <service
-            android:name=".extension.TemplateExtension"
+            android:name=".extension.FuelTrackerExtension"
             android:exported="true"
             tools:ignore="ExportedService">
             <intent-filter>
+                <!-- Required so Karoo OS detects this as an extension -->
                 <action android:name="io.hammerhead.karooext.KAROO_EXTENSION" />
             </intent-filter>
             <meta-data
                 android:name="io.hammerhead.karooext.EXTENSION_INFO"
                 android:resource="@xml/extension_info" />
         </service>
+
     </application>
 
 </manifest>
